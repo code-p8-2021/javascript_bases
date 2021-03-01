@@ -14,10 +14,56 @@
       <h1>
         _00_Types/04_VariablesPlus.html
       </h1>
-          
+      
+      Variables dans la console : ouvrir dans une autre page ou onglet <a href="https://daily-mire-freon.glitch.me/_00_Types/04_VariablesPlus.html" target="_blank">ici</a>
+      <br/>cf. <a href="https://daily-mire-freon.glitch.me/_00_Types/js/appplus.js">./js/04_VariablesPlus.js</a>
+      
+      Qui devrait ressembler à cela
+      <pre>
+// cf. 04_VariablesPlus.html
+let eleves = [&#x27;Jean&#x27;, &#x27;Marc&#x27;, &#x27;Marion&#x27;];
+let demo = [true, 10, &#x27;Marc&#x27;];
+console.log(&quot;eleves == &quot;+ eleves);
+console.log(&quot;demo == &quot;+ demo);
+
+console.warn(&quot;\n\n----\n\n&quot;);
+
+
+
+let eleve = {
+   clef: &#x27;valeur&#x27;,
+   nom: &#x27;Jean&#x27;,
+   age: 18,
+   notes: [10, 4, 18] 
+}
+console.log(&quot;eleve == &quot;+ eleve);
+console.log(&quot;eleve.nom == &quot;+ eleve.nom); // Jean
+console.log(&quot;eleve.notes == &quot;+ eleve.notes); // [10, 4, 18]
+console.log(&quot;eleve.notes[1] == &quot;+ eleve.notes[1]); // 4
+// On peut aussi utiliser une notation proche de celle des tableaux
+console.log(&quot;eleve[&#x27;notes&#x27;] == &quot;+ eleve[&#x27;notes&#x27;]); // [10, 4, 18]
+
+console.warn(&quot;\n\n----\n\n&quot;);
+
+
+
+
+
+let eleve_carnet = {
+    notes: {
+        math: 18,
+        francais: 14   
+    }   
+}
+// Pour récupérer la note de math de l&#x27;élève on peut alors faire
+console.log(&quot;eleve_carnet.notes.math == &quot;+ eleve_carnet.notes.math); // 18
+console.log(&quot;eleve_carnet.nom == &quot;+ eleve_carnet.nom); // undefined
+      </pre>
       
       
-     <div id="infos"></div>
+     <div id="infos">SOURCE :
+       <a href="https://grafikart.fr/tutoriels/variables-765">https://grafikart.fr/tutoriels/variables-765</a> 
+     </div>
       
       
       <div id="back_link" data-title="_00_Types"> 
