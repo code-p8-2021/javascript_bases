@@ -27,4 +27,3 @@ on appelle ça le //back-end, le côté serveur chargé entre autres de distribu
 L'//HTML ou le //CSS et le //javascript sont interprétés nativement par nos navigateurs<br>
 (( qui années après années ajoutent des fonctioionalités possibles par le code (sous la forme des normes) ))<br>
 du côté client, ou //front-end, au moment de l'affichage<br>
-
