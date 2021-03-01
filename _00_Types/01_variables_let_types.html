@@ -22,9 +22,17 @@
     let age = 29;
     let age2 = '29';
     
-    document.getElementById('p1').innerHTML = '#p1 Type de prenom : ' + typeof prenom;
-    document.getElementById('p2').innerHTML = '#p2 Type de age : ' + typeof age;
-    document.getElementById('p3').innerHTML = '#p3 Type de age2 : ' + typeof age2;
+    let p1 = document.getElementById('p3');
+    let p2 = document.getElementById('p1');
+    let p3 = document.getElementById('p2');
+    
+    function typeis(check) {
+      return typeof check
+    }
+    
+  p1.innerHTML = '#p3 Type de age2 : ' + typeof(age2);
+    p2.innerHTML = '#p1 Type de prenom : ' + typeof prenom;
+    p3.innerHTML = '#p2 Type de age : ' + typeof age;
 </script>
   
   
