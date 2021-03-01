@@ -1,22 +1,33 @@
-body {font-family: sans-serif;}
+body {
+  font-family: sans-serif;
+}
 pre,
 #result {
-    background-color: rgb(54, 54, 54);
-  display:block;
+  background-color: rgb(54, 54, 54);
+  display: block;
   overflow: auto;
   padding: 8px 4px 8px 20px;
   border-radius: 3px;
   color: #FFF;
-    white-space: pre;
+  white-space: pre;
 }
 a {
-  display:block;
+  display: block;
+}
+
+#infos,
+#back_link {
+  font-family: serif;
+  color: gray;
 }
 #infos {
-    margin: 120px 0 20px 30px;
-    font-family: serif;
-    color: gray;
+  margin: 120px 0 20px 30px;
 }
+#back_link {
+  margin: 20px 0 20px 30px;
+}
+
+
 #infos a {
   color: #959595;
 }
@@ -28,27 +39,36 @@ a {
 #result {
   padding: 10px;
   margin: 10px 0;
-/*   display:block; */
+  /*   display:block; */
 }
 
 #variables {
-  font-style:italic;
+  font-style: italic;
 }
 
 strike {
   color: #959595;
-  text-decoration:none;
-} 
+  text-decoration: none;
+}
 
 hr.little {
-  margin:10px 0 -10px 0;
-  padding:0px;
+  margin: 10px 0 -10px 0;
+  padding: 0px;
 }
 
 p[id^="p"]:before {
   content: attr(id);
   font-size: 10px;
   color: #959595;
-  display:block;
-  margin-top: -10px
+  display: block;
+  margin-top: -10px;
+}
+
+
+#back_link:after {
+    content: "( "attr(data-title)" )";
+  font-size: 13px;
+  color: #000;
+  display: block;
+  margin-top: 0px;
 }
