@@ -5,7 +5,7 @@ let y = 10, b = 10;
 while(x < 10){
     //...exécute ce code
     document.getElementById('p1').innerHTML +=
-    'x stocke la valeur <b>' 
+    '<i>x</i> stocke la valeur <b>' 
     + x + 
     '</b> lors du passage <u>n°'
     + (x + 1) + 
