@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Cours JavaScript</title>
-        <meta charset="utf-8">
-        <meta name="viewport"
-          content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="/css/style.css">
-        <script src='cours.js' async></script>
-    </head>
-    
-    <body>
-        <h1>Titre principal</h1>
-        <p>Un paragraphe</p>
-        <p id='p1'>text p1</p>
-        <p id='p2'>text p2</p>
-        <p id='p3'>text p3</p>
-    </body>
+  <head>
+    <title>Cours JavaScript</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<script>
-    let prenom = "Je m'appelle Pierre";
-    let age = 29;
-    let age2 = '29';
+  <body>
+    <p>Un paragraphe</p>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
     
-    let p1 = document.getElementById('p3');
-    let p2 = document.getElementById('p1');
-    let p3 = document.getElementById('p2');
     
-    function typeis(check) {
-      return typeof check
-    }
     
-  p1.innerHTML = '#p3 Type de age2 : ' + typeof(age2);
-    p2.innerHTML = '#p1 Type de prenom : ' + typeof prenom;
-    p3.innerHTML = '#p2 Type de age : ' + typeof age;
-</script>
+    
+
+    
+    
+    
+    
+    <script>
+      let nul = null;
+      let ind;
+      document.getElementById("p1").innerHTML = "Type de nul : " + typeof nul;
+      document.getElementById("p2").innerHTML = "Type de ind : " + typeof ind;
+    </script>
+    
+    
+    
+    
+    
+    
+    
+<pre>
+&lt;script&gt;
+  let nul = null;
+  let ind;
   
-  
-  
-  
-  
-  
-  
-  
-  
-      <div id="infos">SOURCE : 
-      <a href="https://www.pierre-giraud.com/javascript-apprendre-coder-cours/type-donnee/">
-      https://www.pierre-giraud.com/javascript-apprendre-coder-cours/type-donnee/
+  document.getElementById('p1').innerHTML = 'Type de nul : ' + typeof nul;
+  document.getElementById('p2').innerHTML = 'Type de ind : ' + typeof ind;
+&lt;/script&gt;
+</pre>
+
+     
+    
+    
+     <div id="infos">
+      SOURCE :
+      <a
+        href="https://www.tutorialspoint.com/javascript/javascript_operators.htm"
+      >
+        https://www.tutorialspoint.com/javascript/javascript_operators.htm
       </a>
-     </div>
+    </div>
+  </body>
 </html>
