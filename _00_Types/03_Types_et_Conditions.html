@@ -12,21 +12,20 @@
       <script type = "text/javascript">
          <!--
             var a = 10;
-            var b = 20;
+            var b = "String_text";
             var linebreak = "<br />";
-    
-            document.write("var a = 10;<br>var b = 20;<br><br>");
         
-            document.write ("((a > b) ? 'Oui' : 'Non') => ");
-            result = (a > b) ? 'Oui' : 'Non';
+            document.write("var a = 10;<br>var b = 'String_text';<br><br>");
+         
+            result = (typeof b == "string" ? "B est String_text" : "B est Numérique");
+            document.write("Resultat => ");
             document.write(result);
             document.write(linebreak);
          
-            document.write ("((a < b) ? 'Oui' : 'Non') => ");
-            result = (a < b) ? 'Oui' : 'Non';
+            result = (typeof a == "string" ? "A est String_text" : "A est Numérique");
+            document.write("Result => ");
             document.write(result);
             document.write(linebreak);
-         //-->
         //-->
       </script>
    </body>
