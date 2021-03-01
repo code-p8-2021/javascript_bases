@@ -11,28 +11,23 @@
      
       <script type = "text/javascript">
          <!--
-            var a = true;
-            var b = false;
+            var a = 10;
+            var b = 20;
             var linebreak = "<br />";
-      
-            document.write("var a = true;<br>var b = false;<br><br>");
+    
+            document.write("var a = 10;<br>var b = 20;<br><br>");
         
-        
-            document.write("(a && b) => ");
-            result = (a && b);
+            document.write ("((a > b) ? 'Oui' : 'Non') => ");
+            result = (a > b) ? 'Oui' : 'Non';
             document.write(result);
             document.write(linebreak);
          
-            document.write("(a || b) => ");
-            result = (a || b);
-            document.write(result);
-            document.write(linebreak);
-         
-            document.write("!(a && b) => ");
-            result = (!(a && b));
+            document.write ("((a < b) ? 'Oui' : 'Non') => ");
+            result = (a < b) ? 'Oui' : 'Non';
             document.write(result);
             document.write(linebreak);
          //-->
+        //-->
       </script>
    </body>
 </html>
