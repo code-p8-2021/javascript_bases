@@ -4,34 +4,34 @@
   </head>
    <body>
      <div id="infos">SOURCE : 
-      <a href="https://www.tutorialspoint.com/javascript/javascript_ifelse.htm">
+      <a href="https://www.tutorialspoint.com/javascript/javascript_switch_case.htm">
       https://www.tutorialspoint.com/javascript/javascript_switch_case.htm
       </a>
      </div>
      
       <script type = "text/javascript">
          <!--
-            var grade = 'A';
-            document.write("Entrée (debug)<br />");
+            let grade = 'A';
+            document.write("(debug) Entrée<br /><div id='result'>");
             switch (grade) {
-               case 'A': document.write("Good job<br />");
+               case 'A': document.write("Bon travail<br />");
                break;
             
-               case 'B': document.write("Pretty good<br />");
+               case 'B': document.write("Asez Bien<br />");
                break;
             
-               case 'C': document.write("Passed<br />");
+               case 'C': document.write("Passé<br />");
                break;
             
-               case 'D': document.write("Not so good<br />");
+               case 'D': document.write("Pas si mal<br />");
                break;
             
-               case 'F': document.write("Failed<br />");
+               case 'F': document.write("Échec<br />");
                break;
             
-               default:  document.write("Unknown grade<br />")
+               default:  document.write("Niveau non renseigné<br />")
             }
-            document.write("Exiting switch block");
+            document.write("</div>(debug) Sortie de switch");
         //-->
       </script>
    </body>

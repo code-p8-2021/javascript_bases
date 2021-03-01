@@ -1,5 +1,6 @@
 body {font-family: sans-serif;}
-pre {
+pre,
+#result {
     background-color: rgb(54, 54, 54);
   display:block;
   overflow: auto;
@@ -14,4 +15,9 @@ a {
 #infos {
   margin-bottom: 20px;
   font-family: serif;
+}
+#result {
+  padding: 10px;
+  margin: 10px 0;
+  display:block;
 }
