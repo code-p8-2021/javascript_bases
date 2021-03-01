@@ -11,7 +11,9 @@ pre,
   color: #FFF;
   white-space: pre;
 }
-a {
+
+
+a:not(.inline) {
   display: block;
 }
 
