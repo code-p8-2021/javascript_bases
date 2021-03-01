@@ -16,8 +16,13 @@
             let c = "Test";
             let linebreak = "<br />";
          
-            document.write("let a = 33;<br>let b = 10;<br>a + b = ");
-            result = a + b;
+            document.write("<div id='variables'>");
+              document.write("let a = 33;<br>");
+              document.write("let b = 10;<br>");
+              document.write("a + b = ");
+            document.write("</div>");
+            
+        result = a + b;
             document.write(result);
             document.write(linebreak);
          
