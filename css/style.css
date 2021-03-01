@@ -13,9 +13,18 @@ a {
   display:block;
 }
 #infos {
-  margin-bottom: 20px;
-  font-family: serif;
+    margin: 120px 0 20px 30px;
+    font-family: serif;
+    color: gray;
 }
+#infos a {
+  color: #959595;
+}
+
+#infos a:visited {
+  color: #000;
+}
+
 #result {
   padding: 10px;
   margin: 10px 0;
