@@ -1,0 +1,44 @@
+let x = 0, a = 0;
+let y = 10, b = 10;
+
+//Tant que...
+while(x < 10){
+    //...exécute ce code
+    document.getElementById('p1').innerHTML +=
+    'x stocke la valeur <b>' + x + 
+    '</b> lors du passage <u>n°'
+    + (x + 1) + 
+    '</u> dans la boucle<br>';
+    x++;
+}
+
+//Faire... tant que
+do{
+    document.getElementById('p2').innerHTML +=
+    'a stocke la valeur <b>'
+    + a + 
+    '</b> lors du passage <u>n°'
+    + (a + 1) + 
+    '</u> dans la boucle<br>';
+    a++;
+}
+while(a < 10);
+
+while(y < 10){
+    document.getElementById('p3').innerHTML +=
+    'y stocke la valeur '
+      + y + 
+      ' lors du passage n°'
+  
+    + (y + 1) + '
+  dans la boucle<br>';
+    y++;
+}
+
+do{
+    document.getElementById('p4').innerHTML +=
+    'b stocke la valeur <b>' + b + '</b> lors du passage <u>n°'
+    + (b + 1) + '</u> dans la boucle<br>';
+    b++;
+}
+while(b < 10);
