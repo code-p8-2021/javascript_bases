@@ -34,3 +34,8 @@ a {
 #variables {
   font-style:italic;
 }
+
+strike {
+  color: #959595;
+  text-decoration:none;
+} 
