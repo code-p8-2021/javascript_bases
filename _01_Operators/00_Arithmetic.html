@@ -11,47 +11,60 @@
             let a = 33;
             let b = 10;
             let c = "Test";
-            let linebreak = "<br />";
+            let linebreak = "<br /><hr class=\"little\" /><br />";
          
+        
+            // On écrit les variables (non executées : texte)      
             document.write("<div id='variables'>");
               document.write("let a = 33;<br>");
               document.write("let b = 10;<br>");
               document.write("a + b = ");
-            document.write("</div>");
+              result = a + b;
+              document.write(result);
+              document.write("</div>");
+               document.write(linebreak);
+        
+        
+        
+          // ------ 
             
-        result = a + b;
+          //1
+              document.write("a - b = ");
+              result = a - b;
+            document.write(result);
+            document.write(linebreak);
+           
+        
+          //2
+              document.write("a / b = ");
+              result = a / b;
+            document.write(result);
+            document.write(linebreak);
+           
+        
+          //3
+              document.write("a % b = ");
+              result = a % b;
+            document.write(result);
+            document.write(linebreak);
+           
+          //4
+              document.write("a + b + c = ");
+              result = a + b + c;
             document.write(result);
             document.write(linebreak);
          
-            document.write("a - b = ");
-            result = a - b;
+          //5
+              a = ++a;
+              document.write("++a = ");
+              result = ++a;
             document.write(result);
             document.write(linebreak);
          
-            document.write("a / b = ");
-            result = a / b;
-            document.write(result);
-            document.write(linebreak);
-         
-            document.write("a % b = ");
-            result = a % b;
-            document.write(result);
-            document.write(linebreak);
-         
-            document.write("a + b + c = ");
-            result = a + b + c;
-            document.write(result);
-            document.write(linebreak);
-         
-            a = ++a;
-            document.write("++a = ");
-            result = ++a;
-            document.write(result);
-            document.write(linebreak);
-         
-            b = --b;
-            document.write("--b = ");
-            result = --b;
+          //6
+              b = --b;
+              document.write("--b = ");
+              result = --b;
             document.write(result);
             document.write(linebreak);
          //-->

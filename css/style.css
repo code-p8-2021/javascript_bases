@@ -39,3 +39,8 @@ strike {
   color: #959595;
   text-decoration:none;
 } 
+
+hr.little {
+  margin:10px 0 -10px 0;
+  padding:0px;
+}
