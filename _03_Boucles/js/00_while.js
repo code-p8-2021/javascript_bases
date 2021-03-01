@@ -40,7 +40,7 @@ while(a < 10);
 
 
 
-//Ne renvoit rien, condition non satisfaite ( y == 10 )
+// Ne renvoit rien, condition non satisfaite ( y == 10 )
 while(y < 10){
     document.getElementById('p3').innerHTML +=
     '<i>y</i> stocke la valeur <b>' 
