@@ -9,3 +9,7 @@ En JavaScript, il existe 7 types de valeurs différents. Chaque valeur qu’on v
 <br>Object ou « objet »*
 <br>
 <br>*) En français
+<br>
+<br>
+<br>
+<br>Source : [pierre-giraud](https://www.pierre-giraud.com/javascript-apprendre-coder-cours/type-donnee/)
