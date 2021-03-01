@@ -1,0 +1,9 @@
+pre {
+    background-color: rgb(54, 54, 54);
+  display:block;
+  overflow: auto;
+  padding: 8px 4px 8px 20px;
+  border-radius: 3px;
+  color: #FFF;
+    white-space: pre;
+}
