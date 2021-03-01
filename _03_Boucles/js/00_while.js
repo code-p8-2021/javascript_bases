@@ -16,14 +16,14 @@ while(x < 10){
 
 
 
-
+// -----
 
 
 
 //Faire... tant que
 do{
     document.getElementById('p2').innerHTML +=
-    'a stocke la valeur <b>'
+    '<i>a</i> stocke la valeur <b>'
     + a + 
     '</b> lors du passage <u>n°'
     + (a + 1) + 
@@ -35,7 +35,7 @@ while(a < 10);
 
 
 
-
+// -----
 
 
 
@@ -43,7 +43,7 @@ while(a < 10);
 //Ne renvoit rien, condition non satisfaite ( y == 10 )
 while(y < 10){
     document.getElementById('p3').innerHTML +=
-    'y stocke la valeur <b>' 
+    '<i>y</i> stocke la valeur <b>' 
     + y + 
     '</b> lors du passage <u> n°'
     + (y + 1) + 
@@ -53,14 +53,14 @@ while(y < 10){
 }
 
 
-
+// -----
 
 
 
 
 do{
     document.getElementById('p4').innerHTML +=
-    'b stocke la valeur <b>' + b + '</b> lors du passage <u>n°'
+    '<i>b</i> stocke la valeur <b>' + b + '</b> lors du passage <u>n°'
     + (b + 1) + '</u> dans la boucle<br>';
   
     b++;
