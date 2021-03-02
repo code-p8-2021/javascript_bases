@@ -31,6 +31,11 @@ a:not(.inline) {
 #infos {
   margin: 120px 0 20px 30px;
 }
+
+#infos.top_infos {
+  margin: 20px 0 20px 0px;
+  text-align:center
+}
 #back_link {
   margin: 20px 0 20px 30px;
 }
@@ -106,3 +111,5 @@ a[title]:before {
   display: block;
   margin-top: 0px;
 }
+
+img.roadmap { max-width: 800px;margin-bottom: 150px}

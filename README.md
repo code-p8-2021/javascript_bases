@@ -24,7 +24,7 @@ d'un seul bloc qu'il vient afficher (en interprétant seulement le *CSS* et *HTM
 . . c'est le cas des serveurs fonctionant avec *NodeJs*.
 
 Ce traitement et envoi de pages construites en amont de leur affichage par le client,
-on appelle ça le *back-end*, le côté serveur chargé entre autres de distribuer les contenus.
+on appelle ça le **back-end**, le **côté serveur** chargé entre autres de distribuer les contenus (c'est le cas de *PHP*).
 
-L'*HTML* ou le *CSS* et le *Javascript* sont interprétés nativement par nos navigateurs du côté client, ou *front-end*, au moment de l'affichage. Ces standards évoluent très vite, et des fonctionalités sont ajoutées assez régulièrement (sous la forme des normes) )) \
+L'*HTML* ou le *CSS* et le *Javascript* sont interprétés nativement par nos navigateurs du **côté client**, ou **front-end**, au moment de l'affichage. Ces standards évoluent très vite, et des fonctionalités sont ajoutées assez régulièrement (sous la forme de normes plus ou moins partagées entre navigateurs)... \
 
