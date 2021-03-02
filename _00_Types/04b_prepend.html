@@ -6,6 +6,10 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="/css/style.css">
     <!-- <script src='./js/appplus.js' async></script> -->
+      
+      <style>
+        li.original {color: green;}
+      </style>
     </head>
     
   
@@ -19,21 +23,25 @@
       
       
       <div id="app">
-      Text de départ
+      <ul>  
+        <li class="original">...</li>
+        <li class="original">Text de départ <a class="inline" href="http://exemple.com">lien</a></li>  
+      </ul>
       </div>
       
-      Apend   signifie "ajouter après l'existant"
-      Prepend signifie "ajouter avant l'existant"
+      
+      
       
       
       <script>
-      let app = document.querySelector('#app');
+      let app = document.querySelector('#app').children[0];
 
       let langs = ['CSS','JavaScript','TypeScript'];
 
       let nodes = langs.map(lang => {
         let li = document.createElement('li');
         li.textContent = lang;
+        li.style.color = "red";
         return li;
       });
 
@@ -46,12 +54,23 @@
       
       
       
+      <div style="margin-top: 30px">
+      <i>Apend</i>   signifie "ajouter après l'existant"<br>
+      <i>Prepend</i> signifie "ajouter avant l'existant"
+      </div>
+      
+      
+      
+      
+      
+      
       
       
       
       
      <div id="infos">SOURCE :
        <a href="https://www.javascripttutorial.net/javascript-dom/javascript-prepend/">https://www.javascripttutorial.net/javascript-dom/javascript-prepend/</a> 
+       <a href="https://www.javascripttutorial.net/javascript-dom/javascript-append//</a> 
      </div>
       
       

@@ -12,6 +12,9 @@ pre,
   white-space: pre;
 }
 
+ul {padding-left: 30px;
+display:bloc;
+}
 
 a:not(.inline) {
   display: block;
