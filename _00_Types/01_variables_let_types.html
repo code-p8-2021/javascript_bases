@@ -11,10 +11,10 @@
       _00_Types/01_variables_let_types.html
     </h1>
     <p>Un paragraphe</p>
-    <p id="p1"></p>
-    <p id="p2"></p>
-    <p id="p3"></p>
-    <p id="p4"></p>
+    <p id="p1">P1</p>
+    <p id="p2">P2</p>
+    <p id="p3">P3</p>
+    <p id="p4">P4</p>
 
     
     
@@ -30,7 +30,9 @@
       let nul = null;
       let ind; //intéfinie
       let nan = "Salut" * 3; // NaN, Not a number
-      let string_vs_nulm ="43" > 1000; //error
+      let string_vs_nulm = "43" > 1000; //error
+      
+      
       document.getElementById("p1").innerHTML = "Type de nul : " + typeof nul;
       document.getElementById("p2").innerHTML = "Type de ind : " + typeof ind;
       document.getElementById("p3").innerHTML = "Type de nan : " + typeof nan;
@@ -38,10 +40,10 @@
 
       
       let query_p3 = document.querySelector('#p3');
-      query_p3.append('\n\n '+nan);
+      query_p3.append('\n==>\n '+nan);
       
       let query_p4 = document.querySelector('#p4');
-      query_p4.append('\n\n '+string_vs_nulm);
+      query_p4.append('\n==>\n '+string_vs_nulm);
     </script>
     
     
@@ -53,10 +55,22 @@
 <pre>
 &lt;script&gt;
   let nul = null;
-  let ind;
+  let ind; //intéfinie
+  let nan = &quot;Salut&quot; * 3; // NaN, Not a number
+  let string_vs_nulm = &quot;43&quot; &gt; 1000; //error
   
-  document.getElementById('p1').innerHTML = 'Type de nul : ' + typeof nul;
-  document.getElementById('p2').innerHTML = 'Type de ind : ' + typeof ind;
+  
+  document.getElementById(&quot;p1&quot;).innerHTML = &quot;Type de nul : &quot; + typeof nul;
+  document.getElementById(&quot;p2&quot;).innerHTML = &quot;Type de ind : &quot; + typeof ind;
+  document.getElementById(&quot;p3&quot;).innerHTML = &quot;Type de nan : &quot; + typeof nan;
+  document.getElementById(&quot;p4&quot;).innerHTML = &quot;Type de string_vs_nulm : &quot; + typeof string_vs_nulm;
+
+  
+  let query_p3 = document.querySelector(&#x27;#p3&#x27;);
+  query_p3.append(&#x27;\n==&gt;\n &#x27;+nan);
+  
+  let query_p4 = document.querySelector(&#x27;#p4&#x27;);
+  query_p4.append(&#x27;\n==&gt;\n &#x27;+string_vs_nulm);
 &lt;/script&gt;
 </pre>
 
@@ -64,12 +78,14 @@
     
     
      <div id="infos">
-      SOURCE :
+      SOURCES :
       <a
         href="https://www.tutorialspoint.com/javascript/javascript_operators.htm"
       >
         https://www.tutorialspoint.com/javascript/javascript_operators.htm
       </a>
+       <a href="https://grafikart.fr/tutoriels/variables-765">https://grafikart.fr/tutoriels/variables-765</a>
+       <a href="https://www.javascripttutorial.net/javascript-dom/javascript-append/" title="append">https://www.javascripttutorial.net/javascript-dom/javascript-append/</a>
     </div>
     
     <div id="back_link" data-title="_00_Types"> 

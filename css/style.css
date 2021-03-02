@@ -58,6 +58,9 @@ hr.little {
   padding: 0px;
 }
 
+
+
+a[title]:before ,
 p[id^="p"]:before {
   content: attr(id);
   font-size: 10px;
@@ -66,12 +69,20 @@ p[id^="p"]:before {
   margin-top: -5px;
   padding-bottom: 5px
 }
+
 p[id^="p"] {
 border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
 padding: 10px 0px 5px 18px!important;
   display:block;
     min-height: 30px
+}
+
+
+a[title]:before {
+  content: attr(title);
+  margin-top: 0px;
+  text-decoration: none;
 }
 
 #back_link:after {
