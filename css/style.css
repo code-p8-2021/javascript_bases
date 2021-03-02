@@ -67,8 +67,8 @@ p[id^="p"]:before {
   padding-bottom: 5px
 }
 p[id^="p"] {
-border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
+border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
 padding: 10px 0px 5px 18px!important;
   display:block;
     min-height: 30px

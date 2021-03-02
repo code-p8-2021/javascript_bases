@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cours JavaScript</title>
+    <title>Types de variables spéciales</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -14,21 +14,34 @@
     <p id="p1"></p>
     <p id="p2"></p>
     <p id="p3"></p>
+    <p id="p4"></p>
 
     
     
     
     
-
-    
-    
+    <!-- 
+    ToDo assignation de variables
+    + lien complément dans _04_Functions
+    -->
     
     
     <script>
       let nul = null;
-      let ind;
+      let ind; //intéfinie
+      let nan = "Salut" * 3; // NaN, Not a number
+      let string_vs_nulm ="43" > 1000; //error
       document.getElementById("p1").innerHTML = "Type de nul : " + typeof nul;
       document.getElementById("p2").innerHTML = "Type de ind : " + typeof ind;
+      document.getElementById("p3").innerHTML = "Type de nan : " + typeof nan;
+      document.getElementById("p4").innerHTML = "Type de string_vs_nulm : " + typeof string_vs_nulm;
+
+      
+      let query_p3 = document.querySelector('#p3');
+      query_p3.append('\n\n '+nan);
+      
+      let query_p4 = document.querySelector('#p4');
+      query_p4.append('\n\n '+string_vs_nulm);
     </script>
     
     
