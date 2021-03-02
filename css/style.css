@@ -63,9 +63,16 @@ p[id^="p"]:before {
   font-size: 10px;
   color: #959595;
   display: block;
-  margin-top: -10px;
+  margin-top: -5px;
+  padding-bottom: 5px
 }
-
+p[id^="p"] {
+border-top: 1px solid #959595;
+  border-bottom: 1px solid #959595;
+padding: 10px 0px 5px 18px!important;
+  display:block;
+    min-height: 30px
+}
 
 #back_link:after {
     content: "( "attr(data-title)" )";
