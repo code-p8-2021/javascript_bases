@@ -18,7 +18,7 @@
     <p id="p1">text p1</p>
     <p id="p2">text p2</p>
     <p id="p3">text p3</p>
-
+    <p id="p4">text p4</p>
     (<i>string</i> ça veut dire chaîne de caractères)
 
     
@@ -27,19 +27,24 @@
     
     
   <script>
-    let prenom = "Je m'appelle Pierre";
-    let age = 29; age++;
-    let age2 = "29";
-    
-
     let p1 = document.getElementById("p1");
     let p2 = document.getElementById("p2");
     let p3 = document.getElementById("p3");
+    let p4 = document.getElementById("p4");
+    
+    let prenom = "Je m'appelle Pierre";
+    let age = 29; age++;
+    let age_réel = "29"; 
+    // let age_conv = age_réel++;
+    
 
-    p1.innerHTML = "#p1 Type de prenom : " + typeof prenom + " == " + prenom;
-    p2.innerHTML = "#p2 Type de age : " + typeof age + " == " + age;
-    p3.innerHTML = "#p3 Type de age2 : " + typeis(age2) + " == " + age2; //Usage d'une fonction nommée "typeis"
 
+
+    p1.innerHTML = "Type de <u>prenom</u> : " + typeof prenom + " == " + prenom;
+    p2.innerHTML = "Type de <u>age</u> : " + typeof age + " == " + age;
+    p3.innerHTML = "Type de <u>age_réel</u> : " + typeis(age_réel) + " == " + age_réel;     
+    // p4.innerHTML = "Type de <u>age_conv</u> : " + typeis(age_conv) + " == " + age_conv; 
+    // Usage d'une fonction nommée "typeis"
     // Function typeis (appellée ici mais traîtée en début de code)
 
     function typeis(check) {
