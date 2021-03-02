@@ -9,6 +9,8 @@
       
       <style>
         li.original {color: green;}
+        ul li:first-child { color: yellowgreen; }
+        ul li:last-child { color: yellowgreen; }
       </style>
     </head>
     
@@ -17,7 +19,7 @@
   
     <body>
       <h1>
-        _00_Types/04b_lister.html
+        _00_Types/04b_list_childs.html
       </h1>
       
       
@@ -30,7 +32,7 @@
         
          <li class="original">    <!-- : second (élément)-->
           Text de départ          <!-- : contenu -->
-            <a class="inline" href="#">lien</a> <!-- : child... -->
+            <b class="inline" href="#">non_lien</b> <!-- : child... -->
          </li> 
       </ul>
       </div>
@@ -51,13 +53,18 @@
         
       
       let app = document.querySelector('#app').firstElementChild;
-      // Presque pareil pour cibler le premier élément (child==enfant)
-      // let app = document.querySelector('#app').children[0]
-        
       app.prepend(...nodes);
         
         
-        
+      //// Suite de la démo 1  
+      // let app_child = app.children[4];  
+      // let app_child_child = app_child.firstElementChild;  
+      //   app_child.style.color = "orange";
+      //   app_child_child.style.color = "blue";
+      
+      //// Suite de la démo 2
+      //  let app_lastchild = app.lastElementChild; 
+      // app_lastchild.style.color = "brown";
       </script>
       
       
@@ -80,9 +87,10 @@
       
       
       
-     <div id="infos">SOURCE :
+     <div id="infos">SOURCES :
        <a href="https://www.javascripttutorial.net/javascript-dom/javascript-prepend/" title="prepend">https://www.javascripttutorial.net/javascript-dom/javascript-prepend/</a> 
        <a href="https://www.javascripttutorial.net/javascript-dom/javascript-append/" title="append">https://www.javascripttutorial.net/javascript-dom/javascript-append/</a> 
+      <a href="https://www.javascripttutorial.net/javascript-dom/javascript-get-child-element/" title="child_siblings">https://www.javascripttutorial.net/javascript-dom/javascript-get-child-element/</a>
      </div>
       
       
