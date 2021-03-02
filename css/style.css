@@ -112,4 +112,4 @@ a[title]:before {
   margin-top: 0px;
 }
 
-img.roadmap { max-width: 800px;margin-bottom: 150px}
+img.roadmap { width: 100%; max-width: 800px; margin: 10px auto 150px auto; display:block;}
