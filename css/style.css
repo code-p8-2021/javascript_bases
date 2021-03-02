@@ -1,6 +1,12 @@
 body {
   font-family: sans-serif;
 }
+h1,h2, h3, h4, h5, h6 {margin:0px;}
+h1 {font-size: 1.5em;margin-bottom: 0.6em;}
+h2, h3, h4, h5, h6 {font-size: 1.3em}
+h2 {margin-top: 0.3em;}
+h1+h2 {margin-top: -0.6em;}
+
 pre,
 #result {
   background-color: rgb(54, 54, 54);
@@ -12,6 +18,9 @@ pre,
   white-space: pre;
 }
 
+ul {padding-left: 30px;
+display:bloc;
+}
 
 a:not(.inline) {
   display: block;
@@ -25,6 +34,11 @@ a:not(.inline) {
 #infos {
   margin: 120px 0 20px 30px;
 }
+
+#infos.top_infos {
+  margin: 20px 0 20px 0px;
+  text-align:center
+}
 #back_link {
   margin: 20px 0 20px 30px;
 }
@@ -32,6 +46,7 @@ a:not(.inline) {
 
 #infos a {
   color: #959595;
+  text-decoration-color: #e0e0e0;
 }
 
 #infos a:visited {
@@ -54,18 +69,47 @@ strike {
 }
 
 hr.little {
-  margin: 10px 0 -10px 0;
+  margin: 10px 0 -5px 0;
   padding: 0px;
+  background:#e0e0e0;
+  border: 0px;
+  height:1px;
+  pading: 0px;
 }
 
+
+
+a[title]:before ,
 p[id^="p"]:before {
   content: attr(id);
   font-size: 10px;
   color: #959595;
   display: block;
-  margin-top: -10px;
+  margin-top: -5px;
+  padding-bottom: 5px
 }
 
+p[id^="p"] {
+border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+padding: 10px 0px 5px 18px!important;
+  display:block;
+    min-height: 30px;
+  margin-left: -10px;
+  width: calc(100% + 0px)
+}
+p:not([id]) {
+  padding-left: 10px;
+    display:block;
+}
+a[title]:before {
+  content: attr(title);
+  position:relative;
+  top: 6px;
+  font-size: 13px;
+  margin-top:0px;
+  color:#000;
+}
 
 #back_link:after {
     content: "( "attr(data-title)" )";
@@ -73,4 +117,11 @@ p[id^="p"]:before {
   color: #000;
   display: block;
   margin-top: 0px;
+}
+
+img.roadmap { width: 100%; max-width: 800px; margin: 10px auto 150px auto; display:block;}
+
+img#killhumans{
+  max-width: 500px;
+    filter: blur(1);
 }
