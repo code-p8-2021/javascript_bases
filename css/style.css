@@ -120,3 +120,8 @@ a[title]:before {
 }
 
 img.roadmap { width: 100%; max-width: 800px; margin: 10px auto 150px auto; display:block;}
+
+img#killhumans{
+  max-width: 500px;
+    filter: blur(1);
+}
