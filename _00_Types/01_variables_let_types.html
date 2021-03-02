@@ -13,8 +13,10 @@
     <p>Un paragraphe</p>
     <p id="p1">P1</p>
     <p id="p2">P2</p>
+    
     <p id="p3">P3</p>
     <p id="p4">P4</p>
+    <p id="p5">Variable ind_1</p>
 
     
     
@@ -27,11 +29,16 @@
     
     
     <script>
+      // p1
       let nul = null;
+      // p2
       let ind; //intéfinie
+      // p3
       let nan = "Salut" * 3; // NaN, Not a number
+      // p4
       let string_vs_nulm = "43" > 1000; //error
-      
+      // p5
+      let ind_1; //intéfinie
       
       document.getElementById("p1").innerHTML = "Type de nul : " + typeof nul;
       document.getElementById("p2").innerHTML = "Type de ind : " + typeof ind;
@@ -44,6 +51,13 @@
       
       let query_p4 = document.querySelector('#p4');
       query_p4.append('\n==>\n '+string_vs_nulm);
+      
+      ind_1="non_indéfini"; 
+      ind_1+="_"
+      ind_1="_"
+      let query_p5 = document.querySelector('#p5');
+      query_p5.append('\n==>\n '+ind_1);
+      
     </script>
     
     
