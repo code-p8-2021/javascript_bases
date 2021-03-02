@@ -17,15 +17,21 @@
   
     <body>
       <h1>
-        _00_Types/04b_prepend.html
+        _00_Types/04b_lister.html
       </h1>
       
       
       
-      <div id="app">
-      <ul>  
-        <li class="original">...</li>
-        <li class="original">Text de départ <a class="inline" href="http://exemple.com">lien</a></li>  
+      <div id="app"> <!-- #app est la div "parente" -->
+       <ul> <!-- : first child==premier enfant (élément)-->
+        <li class="original">      <!-- : second (élément)-->
+          ...                      <!-- : contenu -->
+        </li>                    
+        
+         <li class="original">    <!-- : second (élément)-->
+          Text de départ          <!-- : contenu -->
+            <a class="inline" href="#">lien</a> <!-- : child... -->
+         </li> 
       </ul>
       </div>
       
@@ -34,8 +40,6 @@
       
       
       <script>
-      let app = document.querySelector('#app').children[0];
-
       let langs = ['CSS','JavaScript','TypeScript'];
 
       let nodes = langs.map(lang => {
@@ -44,8 +48,16 @@
         li.style.color = "red";
         return li;
       });
-
+        
+      
+      let app = document.querySelector('#app').firstElementChild;
+      // Presque pareil pour cibler le premier élément (child==enfant)
+      // let app = document.querySelector('#app').children[0]
+        
       app.prepend(...nodes);
+        
+        
+        
       </script>
       
       
@@ -69,8 +81,8 @@
       
       
      <div id="infos">SOURCE :
-       <a href="https://www.javascripttutorial.net/javascript-dom/javascript-prepend/">https://www.javascripttutorial.net/javascript-dom/javascript-prepend/</a> 
-       <a href="https://www.javascripttutorial.net/javascript-dom/javascript-append//</a> 
+       <a href="https://www.javascripttutorial.net/javascript-dom/javascript-prepend/" title="prepend">https://www.javascripttutorial.net/javascript-dom/javascript-prepend/</a> 
+       <a href="https://www.javascripttutorial.net/javascript-dom/javascript-append/" title="append">https://www.javascripttutorial.net/javascript-dom/javascript-append/</a> 
      </div>
       
       
