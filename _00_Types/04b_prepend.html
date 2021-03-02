@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables plus plus plus</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/style.css">
+    <!-- <script src='./js/appplus.js' async></script> -->
+    </head>
+    
+  
+  
+  
+    <body>
+      <h1>
+        _00_Types/04b_prepend.html
+      </h1>
+      
+      
+      
+      <div id="app">
+      Text de départ
+      </div>
+      
+      Apend   signifie "ajouter après l'existant"
+      Prepend signifie "ajouter avant l'existant"
+      
+      
+      <script>
+      let app = document.querySelector('#app');
+
+      let langs = ['CSS','JavaScript','TypeScript'];
+
+      let nodes = langs.map(lang => {
+        let li = document.createElement('li');
+        li.textContent = lang;
+        return li;
+      });
+
+      app.prepend(...nodes);
+      </script>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     <div id="infos">SOURCE :
+       <a href="https://www.javascripttutorial.net/javascript-dom/javascript-prepend/">https://www.javascripttutorial.net/javascript-dom/javascript-prepend/</a> 
+     </div>
+      
+      
+      <div id="back_link" data-title="_00_Types"> 
+      <a href="https://daily-mire-freon.glitch.me/_00_Types/">
+      BACK
+      </a>
+     </div>
+    </body>
+  
+  
+  
+  
+  
+  
+  
+    
+
+</html>
+

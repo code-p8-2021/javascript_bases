@@ -32,6 +32,7 @@ a:not(.inline) {
 
 #infos a {
   color: #959595;
+  text-decoration-color: #e0e0e0;
 }
 
 #infos a:visited {
@@ -81,8 +82,11 @@ padding: 10px 0px 5px 18px!important;
 
 a[title]:before {
   content: attr(title);
-  margin-top: 0px;
-  text-decoration: none;
+  position:relative;
+  top: 6px;
+  FONT-SIZE: 13px;
+  margin-top:0px;
+  color:#000;
 }
 
 #back_link:after {
