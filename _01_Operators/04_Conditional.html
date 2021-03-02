@@ -11,8 +11,8 @@
      
       <script type = "text/javascript">
          <!--
-            let a = 10;
-            let b = 20;
+            let a = 10; // alliéEs
+            let b = 0; // contres
             let linebreak = "<br /><hr class=\"little\" /><br />";
     
             document.write("<div id='variables'>let a = 10;<br>let b = 20;</div><br>"+linebreak);
@@ -21,13 +21,13 @@
         
         
         
-            document.write ("((a > b) ? 'Oui' : 'Non') => ");
-            result = (a > b) ? 'Oui' : 'Non';
+            document.write ("((a > b) ? 'Gagne' : 'Perd') => ");
+            result = (a > b) ? 'Gagne' : 'Perd';
             document.write(result);
             document.write(linebreak);
          
-            document.write ("((a < b) ? 'Oui' : 'Non') => ");
-            result = (a < b) ? 'Oui' : 'Non';
+            document.write ("((a < b) ? 'plan_B' : 'Fin_du_monde') => ");
+            result = ((a < b)||(b == 0)) ? 'plan_B' : 'Fin_du_monde';
             document.write(result);
             document.write(linebreak);
          //-->

@@ -1,12 +1,10 @@
 body {
   font-family: sans-serif;
 }
-
-h1 {font-size: 1.5em}
-h2, h3, h4, h5, h6 {font-size: 1.3em}
 h1,h2, h3, h4, h5, h6 {margin:0px;}
+h1 {font-size: 1.5em;margin-bottom: 0.6em;}
+h2, h3, h4, h5, h6 {font-size: 1.3em}
 h2 {margin-top: 0.3em;}
-h1 {margin-bottom: 0.6em;}
 h1+h2 {margin-top: -0.6em;}
 
 pre,
@@ -71,8 +69,12 @@ strike {
 }
 
 hr.little {
-  margin: 10px 0 -10px 0;
+  margin: 10px 0 -5px 0;
   padding: 0px;
+  background:#e0e0e0;
+  border: 0px;
+  height:1px;
+  pading: 0px;
 }
 
 
