@@ -1,0 +1,3 @@
+Glitch.com limite l'ouverture de lien dans ses iframes (fenêtres d'aperçus à droite). Du coup seuls les liens pointant vers du contenu du site Glich.com est autorisé.
+== Il faut ouvrir les liens (url) dans un autre onglet (ou fenêtre)
+C'est le cas pour les liens de Source...
